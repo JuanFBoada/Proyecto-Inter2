@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="registro.html">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/HTML/registro.html">
     <title>Proyecto inter2</title>
 </head>
 <body>
@@ -16,12 +16,12 @@
                         <h2>BIENBENIDO</h2>
                         <div class="formulario">
                             <ion-icon name="mail-outline"></ion-icon>
-                            <input type="email" required>
+                            <input id="user" type="email" required>
                             <label for="">Usuario </label>
                         </div>
                         <div class="formulario">
                             <ion-icon name="lock-closed-outline"></ion-icon>
-                            <input type="password" required>
+                            <input id="password" type="password" required>
                             <label for="">Contraseña</label>
                         </div>
 
@@ -29,14 +29,15 @@
                             <label for=""><input type="checkbox">Recordar
                             <a href="#">Olvidaste mi contraseña?</a></label><br>
                         </div>
-                        <button type="submit">Ingresar</button>
+                        <button type="button" onclick="login()">Ingresar</button>
                         <div class="Registrar">
-                            <p>No tengo una cuenta  <a href="registro.html"> Registrate</a></p>
+                            <p>No tengo una cuenta  <a href="/HTML/registro.html"> Registrate</a></p>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
     </header>
+    <script src="/app.js"></script>
 </body>
 </html>
